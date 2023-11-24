@@ -1,0 +1,97 @@
+/* Основные стили для элементов списка и изображений */
+.demonstration_pictures {
+    display: flex;
+    justify-content: space-evenly;  
+    /* padding: 0; */
+    flex-wrap: wrap;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgba(208, 163, 232, 0.544));
+    transition: transform 0.3s ease-in-out;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px, rgb(38, 57, 77) 0px 2px 16px 0px;
+    max-width: 100%;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+
+}
+.card1{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    margin-top: 15px;
+}
+.content-hide h3{
+    text-align: center;
+}
+.content-hide p{
+    text-align: center;
+}
+.content-hide button{
+
+    position: relative;
+    left: 20px;
+    font-size: 15px;
+    padding: 3%;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+    border-radius: 2px;
+    overflow: hidden;
+    text-align: center;
+}
+.content-hide button:hover{  
+    background-color: rgb(252, 222, 255);
+}
+.card1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ширина 100% относительно карточки, а не изображения */
+    height: 100%; /* Высота 100% относительно карточки, а не изображения */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.479), rgb(208, 163, 232));
+    color: #000000;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.card1:hover::before {
+    opacity: 50%; 
+}
+
+.card1 .content-hide{
+    visibility: hidden; 
+    position: absolute;
+    top:10px;
+}
+.card1:hover .content-hide  {
+    visibility: visible;
+}
+  
+  .demonstration_pictures img {
+    max-width: 100%; 
+    height: auto; 
+    border: 2px solid rgb(0, 0, 0);
+  } 
+  
+  /* Стили для мобильных устройств (медиазапрос) */
+  @media (max-width: 768px) {
+    .demonstration_pictures li {
+      flex-basis: calc(50% - 5px); /* Половина ширины контейнера, с учетом маргина */
+    }
+  }
+  
+  /* Стили для планшетов (медиазапрос) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .demonstration_pictures li {
+      flex-basis: calc(33.33% - 5px); /* Треть ширины контейнера, с учетом маргина */
+    }
+  }
+  
+  /* Стили для больших экранов (медиазапрос) */
+  @media (min-width: 1025px) {
+    .demonstration_pictures li {
+      flex-basis: calc(25% - 5px); /* Четверть ширины контейнера, с учетом маргина */
+    }
+  }
