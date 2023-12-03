@@ -21,9 +21,12 @@
 }
 .content-hide h3{
     text-align: center;
+    background-color: rgba(240, 255, 255, 0.655);
+
 }
 .content-hide p{
     text-align: center;
+    background-color: rgba(240, 255, 255, 0.5);
 }
 .content-hide button{
 
@@ -42,12 +45,13 @@
 }
 .content-hide button:hover{  
     background-color: rgb(252, 222, 255);
+    cursor: pointer;
 }
 .card1::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: 2px;
     width: 100%; /* Ширина 100% относительно карточки, а не изображения */
     height: 100%; /* Высота 100% относительно карточки, а не изображения */
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.479), rgb(208, 163, 232));
@@ -64,6 +68,7 @@
     visibility: hidden; 
     position: absolute;
     top:10px;
+    left:3px;
 }
 .card1:hover .content-hide  {
     visibility: visible;

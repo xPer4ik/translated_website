@@ -56,7 +56,9 @@ nav ul li{
 }
 
 nav ul li a:hover {
-    color: rgb(111, 223, 242);
+    color: rgb(208, 163, 232);
+    background-color: rgb(106, 104, 104);
+    border-radius: 15px;
 }
 
 .greenback {

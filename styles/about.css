@@ -1,0 +1,53 @@
+.about_us {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgba(208, 163, 232, 0.544));
+    transition: transform 0.3s ease-in-out;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px, rgb(38, 57, 77) 0px 2px 16px 0px;
+    max-width: 100%;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    font-family: cursive;
+}
+
+.company_name {
+    font-size: 40px;
+}
+
+.Parts p:nth-child(1) {
+    font-size: 20px;
+}
+
+.Parts p:nth-child(2) {
+    font-size: 17px;
+    margin-left: 60px;
+}
+
+.ending p {
+    font-size: 25px;
+}
+
+.about_us img {
+    flex: 0 0 500px;
+    height: 500px;
+    margin-right: 20px; /* Отступ между изображением и текстом */
+    border-radius: 5px; /* Применение border-radius к изображению */
+}
+@media screen and (max-width: 820px) {
+    .about_us img {
+        flex: 0 0 500px;
+        height: 300px;
+        margin-right: 20px; /* Отступ между изображением и текстом */
+        border-radius: 5px; /* Применение border-radius к изображению */
+    }
+}
+@media screen and (max-width: 580px) {
+    .about_us img {
+        flex: 0 0 100px;
+        height: 180px;
+        margin-right: 20px; /* Отступ между изображением и текстом */
+        border-radius: 5px; /* Применение border-radius к изображению */
+    }
+}

@@ -1,0 +1,31 @@
+
+.title_h p{
+    position: relative;
+    left: 20px;
+    font-size: 25px;
+    padding: 3%;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+    border-radius: 2px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.videos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgba(208, 163, 232, 0.544));
+}
+iframe{
+    margin: 10px;
+}
+@media screen and (max-width: 580px) {
+    iframe{
+        width: 224px;
+        height: 126px;
+    }
+}

@@ -14,6 +14,7 @@ const b13 = document.getElementById('b13');
 const b14 = document.getElementById('b14');
 const b15 = document.getElementById('b15');
 const b16 = document.getElementById('order');
+const b17 = document.getElementById('deleting');
 counter = localStorage.getItem('counter2');
 if(counter !==null){
     b16.innerText = 'Заказ[' + counter + "]";
@@ -33,57 +34,62 @@ function handleButtonClick(itemToAdd) {
 if(b12 !== null)
 {
     b12.addEventListener('click', function() {
-        handleButtonClick('six');
+        handleButtonClick('Доставка - 500руб.');
     });
     b13.addEventListener('click', function() {
-        handleButtonClick('seven');
+        handleButtonClick('Сборка - 2000руб.');
     });
 
     b14.addEventListener('click', function() {
-        handleButtonClick('six');
+        handleButtonClick('Помощь мастера - 2500руб.');
     });
     b15.addEventListener('click', function() {
-        handleButtonClick('six');
+        handleButtonClick('Замер комнаты - 700руб.');
     });
 }
 if(b1 !==null){
     b1.addEventListener('click', function() {
-        handleButtonClick('seven');
+        handleButtonClick('Кровать Modern - 150.000руб.');
     });
     b2.addEventListener('click', function() {
-        handleButtonClick('six');
+        handleButtonClick('Кровать Li-dia - 300.000руб.');
     });
     b3.addEventListener('click', function() {
-        handleButtonClick('seven');
+        handleButtonClick('Кровать Mo-de - 100.000руб.');
     });
 
     b4.addEventListener('click', function() {
-        handleButtonClick('six');
+        handleButtonClick('Кровать Do-rid - 200.000руб.');
     });
 
     b5.addEventListener('click', function() {
-        handleButtonClick('seven');
+        handleButtonClick('Кресло Classic - 30.000руб.');
     });
 
     b6.addEventListener('click', function() {
-        handleButtonClick('six');
+        handleButtonClick('Набор Tea-time - 150.000руб.');
     });
     b7.addEventListener('click', function() {
-        handleButtonClick('seven');
+        handleButtonClick('Кресла Double-sitting - 88.000руб.');
     });
 
     b8.addEventListener('click', function() {
-        handleButtonClick('six');
+        handleButtonClick('Кресло Rich - 75.000 руб.');
     });
     b9.addEventListener('click', function() {
-        handleButtonClick('seven');
+        handleButtonClick('Диван More than modern - 125.000руб.');
     });
 
     b10.addEventListener('click', function() {
-        handleButtonClick('six');
+        handleButtonClick('Диван Kit-Chen - 45.000руб.');
     });
     b11.addEventListener('click', function() {
-        handleButtonClick('seven');
+        handleButtonClick('Диван Family - 80.000руб');
     });
-
 }
+if(b17!==null){
+    b17.addEventListener('click', function() {
+        localStorage.clear();
+        document.getElementById('order').innerHTML = "Заказ";
+        document.getElementById("all_order").innerHTML = '';
+    })}

@@ -1,0 +1,87 @@
+body {
+    background: rgba(208, 163, 232, 0.544);
+    margin: 0;
+}
+
+.all_items{
+
+    
+    transition: transform 0.3s ease-in-out;
+
+    max-width: 100%;
+    border-radius: 5px; 
+    margin: 10px;
+    padding: 10px;
+    
+}
+.title_basket p{
+    margin-left: 100px;
+    font-size: 30px;
+}
+.all_orderc{
+    background-color:  rgba(208, 163, 232, 0.544);
+    transition: transform 0.3s ease-in-out;
+    
+    max-width: 100%;
+    border-radius: 5px; 
+    margin: 10px;
+    padding: 10px;
+}
+.all_orderc p{
+    font-size: 20px;
+    margin-left: 50px;
+}
+.button_send button{
+    position: relative;
+    left: 50px;
+    font-size: 20px;
+    padding: 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+    border-radius: 2px;
+    overflow: hidden;
+    text-align: center;
+}
+.button_send button:hover{
+    background-color: rgb(211, 132, 215);
+}
+.link_to_youtybe{
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex
+}
+.link_to_youtybe p{
+    position: relative;
+    font-size: 20px;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgba(208, 163, 232, 0.544));
+    border-radius: 2px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 8px;
+}
+.link_to_youtybe a{
+    position: relative;
+    left: 50px;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+    border-radius: 2px;
+    overflow: hidden;
+    text-align: center;
+}
+.link_to_youtybe a:hover{
+    background-color: rgb(211, 132, 215);
+}

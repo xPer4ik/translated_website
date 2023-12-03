@@ -75,11 +75,11 @@
     color: azure;
     transition: all 400ms ease-out;
     background-color: rgb(55, 54, 54);
-    padding: 7px;
+    padding: 5px;
     border-radius: 50px;
 }
 .itemContent a:hover {
-    background-color: rgb(252, 212, 212);
+    background-color: rgb(152, 146, 146);
 }
 .item .itemContent {
     top: 30%;
@@ -106,7 +106,7 @@
     justify-content: space-between;
     bottom: calc(10%);
     left: calc(50% - 60px);
-    width: 120px;
+    width: 150px;
     height: 20px;
 }
 
@@ -116,7 +116,7 @@
     border: 3px solid rgba(255, 255, 255, 0.294);
     transition: all 500ms ease-out 600ms;
     border-radius: 50px;
-    width: 15px;
+    width: 25px;
     height: 15px;
 }
 #numOfItems .numItem:nth-child(1) {
