@@ -7,7 +7,6 @@ body {
 
     
     transition: transform 0.3s ease-in-out;
-
     max-width: 100%;
     border-radius: 5px; 
     margin: 10px;
@@ -52,7 +51,9 @@ body {
     margin-top: 25px;
     justify-content: center;
     align-items: center;
-    display: flex
+    display: flex;
+    flex-wrap: wrap;
+
 }
 .link_to_youtybe p{
     position: relative;
@@ -69,9 +70,10 @@ body {
 }
 .link_to_youtybe a{
     position: relative;
-    left: 50px;
+    left: 2%;
     font-size: 20px;
     margin: 0;
+    margin-right: 50px;
     padding: 10px;
     text-decoration: none;
     color: rgb(0, 0, 0);

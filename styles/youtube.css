@@ -1,7 +1,15 @@
+body{
+    background: linear-gradient(to right, rgb(255, 255, 255), rgba(208, 163, 232, 0.544));
+}
 
+.title_h{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
 .title_h p{
     position: relative;
-    left: 20px;
+    margin: 5px;
     font-size: 25px;
     padding: 3%;
     text-decoration: none;
@@ -18,7 +26,6 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background: linear-gradient(to right, rgb(255, 255, 255), rgba(208, 163, 232, 0.544));
 }
 iframe{
     margin: 10px;
