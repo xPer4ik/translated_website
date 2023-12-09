@@ -61,7 +61,7 @@
     transition: opacity 0.3s ease;
 }
 .card1:hover::before {
-    opacity: 50%; 
+    opacity: 50%;  
 }
 
 .card1 .content-hide{
@@ -73,7 +73,12 @@
 .card1:hover .content-hide  {
     visibility: visible;
 }
-.card1:active .content-hide{
+.card1 .content-hide {
+  visibility: hidden;
+  transition: visibility 0.3s ease;
+}
+
+.card1:active .content-hide {
   visibility: visible;
 }
   
