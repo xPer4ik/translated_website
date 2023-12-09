@@ -31,6 +31,8 @@ body {
     margin-left: 50px;
 }
 .button_send button{
+    width: 245px;
+    height: 58px;
     position: relative;
     left: 50px;
     font-size: 20px;
@@ -86,4 +88,20 @@ body {
 }
 .link_to_youtybe a:hover{
     background-color: rgb(211, 132, 215);
+}
+@media screen and (max-width: 670px) {
+    .link_to_youtybe a{
+        left: 0;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 570px) {
+    .button_send{
+        display: grid;
+        justify-content: center;
+    }
+    .button_send button{
+        left:0;
+    }
+
 }

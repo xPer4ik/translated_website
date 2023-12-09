@@ -73,6 +73,9 @@
 .card1:hover .content-hide  {
     visibility: visible;
 }
+.card1:active .content-hide{
+  visibility: visible;
+}
   
   .demonstration_pictures img {
     max-width: 100%; 
