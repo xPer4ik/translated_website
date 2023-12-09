@@ -49,12 +49,13 @@
     overflow: hidden;
     text-align: center;
 }
-.item button:hover{
-    background-color: rgb(252, 222, 255);
-    cursor: pointer;
 
-}
-
+@media (min-width: 1025px) {
+    .item button:hover{
+        background-color: rgb(252, 222, 255);
+        cursor: pointer;
+    }
+  }
 .text {
     width: 210px;
     height: 150px;

@@ -46,9 +46,6 @@ body {
     overflow: hidden;
     text-align: center;
 }
-.button_send button:hover{
-    background-color: rgb(211, 132, 215);
-}
 .link_to_youtybe{
     margin-top: 25px;
     justify-content: center;
@@ -105,3 +102,9 @@ body {
     }
 
 }
+@media (min-width: 1025px) {
+    .button_send button:hover{
+        background-color: rgb(211, 132, 215);
+        cursor: pointer;
+    }
+  }

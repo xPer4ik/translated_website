@@ -44,7 +44,7 @@
     text-align: center;
 }
 .content-hide button:hover{  
-    background-color: rgb(252, 222, 255);
+    /* background-color: rgb(252, 222, 255); */
     cursor: pointer;
 }
 .card1::before {
@@ -99,4 +99,8 @@
     .demonstration_pictures li {
       flex-basis: calc(25% - 5px); /* Четверть ширины контейнера, с учетом маргина */
     }
+    .content-hide button:hover{  
+      background-color: rgb(252, 222, 255);
+      cursor: pointer;
+  }
   }
