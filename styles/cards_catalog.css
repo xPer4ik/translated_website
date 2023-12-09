@@ -30,16 +30,18 @@
 }
 .content-hide button{
 
-    position: absolute;
-    margin-left: 20px;
-    font-size: 15px;
-    padding: 3%;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
-    text-transform: uppercase;
-    border-radius: 2px;
-    text-align: center;
+  position: absolute;
+  font-size: 15px;
+  margin-left: 15px;
+  padding: 3%;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+  border-radius: 2px;
+  overflow: hidden;
+  text-align: center;
 }
 .content-hide button:hover{  
     /* background-color: rgb(252, 222, 255); */
