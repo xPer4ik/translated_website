@@ -9,7 +9,7 @@
     margin: 0;
     /* margin-top: -200px; */
     height: 100%;
-    width: calc(400%);
+    width: calc(500%); /*400%*/
     transition: all 500ms ease-out 600ms;
 }
 
@@ -18,7 +18,7 @@
     margin: 0;
     padding: 0;
     display: inline-block;
-    width: calc(25% - 3px);
+    width: calc(20% - 3px);/*25%*/
     overflow: hidden;
     height: 100%;
 }
