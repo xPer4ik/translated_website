@@ -17,12 +17,12 @@ const b16 = document.getElementById('order');
 const b17 = document.getElementById('deleting');
 counter = localStorage.getItem('counter2');
 if(counter !==null){
-    b16.innerText = 'Заказ[' + counter + "]";
+    b16.innerText = 'Order[' + counter + "]";
 }
 
 function handleButtonClick(itemToAdd) {
     counter++;
-    b16.innerText = 'Заказ[' + counter + "]";
+    b16.innerText = 'Order[' + counter + "]";
     localStorage.setItem('counter2', counter);
     
     const storedArrayString = localStorage.getItem('array');
@@ -34,62 +34,62 @@ function handleButtonClick(itemToAdd) {
 if(b12 !== null)
 {
     b12.addEventListener('click', function() {
-        handleButtonClick('Доставка - 500руб.');
+        handleButtonClick('Delivery - 500rubles.');
     });
     b13.addEventListener('click', function() {
-        handleButtonClick('Сборка - 2000руб.');
+        handleButtonClick('Assembling - 2000rubles.');
     });
 
     b14.addEventListener('click', function() {
-        handleButtonClick('Помощь мастера - 2500руб.');
+        handleButtonClick('Master`s help - 2500rubles.');
     });
     b15.addEventListener('click', function() {
-        handleButtonClick('Замер комнаты - 700руб.');
+        handleButtonClick('Measuring a room - 700rubles.');
     });
 }
 if(b1 !==null){
     b1.addEventListener('click', function() {
-        handleButtonClick('Кровать Modern - 150.000руб.');
+        handleButtonClick('Bed Modern - 150.000rubles.');
     });
     b2.addEventListener('click', function() {
-        handleButtonClick('Кровать Li-dia - 300.000руб.');
+        handleButtonClick('Bed Li-dia - 300.000rubles.');
     });
     b3.addEventListener('click', function() {
-        handleButtonClick('Кровать Mo-de - 100.000руб.');
+        handleButtonClick('Bed Mo-de - 100.000rubles.');
     });
 
     b4.addEventListener('click', function() {
-        handleButtonClick('Кровать Do-rid - 200.000руб.');
+        handleButtonClick('Bed Do-rid - 200.000rubles.');
     });
 
     b5.addEventListener('click', function() {
-        handleButtonClick('Кресло Classic - 30.000руб.');
+        handleButtonClick('Armchair Classic - 30.000rubles.');
     });
 
     b6.addEventListener('click', function() {
-        handleButtonClick('Набор Tea-time - 150.000руб.');
+        handleButtonClick('A set of Tea-time - 150.000rubles.');
     });
     b7.addEventListener('click', function() {
-        handleButtonClick('Кресла Double-sitting - 88.000руб.');
+        handleButtonClick('Armchair Double-sitting - 88.000rubles.');
     });
 
     b8.addEventListener('click', function() {
-        handleButtonClick('Кресло Rich - 75.000 руб.');
+        handleButtonClick('Armchair Rich - 75.000 rubles.');
     });
     b9.addEventListener('click', function() {
-        handleButtonClick('Диван More than modern - 125.000руб.');
+        handleButtonClick('Sofa More than modern - 125.000rubles.');
     });
 
     b10.addEventListener('click', function() {
-        handleButtonClick('Диван Kit-Chen - 45.000руб.');
+        handleButtonClick('Sofa Kit-Chen - 45.000rubles.');
     });
     b11.addEventListener('click', function() {
-        handleButtonClick('Диван Family - 80.000руб');
+        handleButtonClick('Sofa Family - 80.000rubles');
     });
 }
 if(b17!==null){
     b17.addEventListener('click', function() {
         localStorage.clear();
-        document.getElementById('order').innerHTML = "Заказ";
+        document.getElementById('order').innerHTML = "Order";
         document.getElementById("all_order").innerHTML = '';
     })}
